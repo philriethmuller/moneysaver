@@ -1,12 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Footer extends React.Component {
-  render() {
-    return (
-      <footer></footer>
-    );
-  }
+export default function Footer(props) {
+  return (
+    <footer>Hello</footer>
+  );
 }
-
-export default Footer

@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class TaskList extends React.Component {
-  render() {
-    return (
-      <ul>
-        <li></li>
-      </ul>
-    );
+export default function TaskList(props) {
+  const handleClick = (amount) => {
+    props.onItemClick(amount);
   }
-}
 
-export default TaskList
+  return (
+    <ul>
+      {props.taskItems.map((item, index) => (
+        <li onClick={() => handleClick(item.amount)}>{item.name}</li>
+      ))}
+    </ul>
+  );
+}

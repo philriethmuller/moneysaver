@@ -1,18 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Header extends React.Component {
-  render() {
-    return (
-      <header>
-        <div id="userDetails">
-          <div class="user">Anthony</div>
-          <div class="total">$4.00</div>
-        </div>
-      </header>
-    );
-  }
+export default function Header(props) {
+  return (
+    <header>
+      <div id="userDetails">
+        <div class="user">{props.user}</div>
+        <div class="total">${parseFloat(props.total).toFixed(2)}</div>
+      </div>
+    </header>
+  );
 }
-
-
-export default Header
