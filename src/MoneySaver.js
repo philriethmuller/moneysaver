@@ -13,9 +13,20 @@ const taskItems = [
 export default function MoneySaver() {
   const [user, setUser] = useState('Anthony');
   const [total, setTotal] = useState(0);
+  const [history, setHistory] = useState([]);
 
+  //Update the total amount saved
   const addToTotal = (amount) => {
     setTotal(total + amount);
+
+    updateHistory(amount);
+  }
+
+  //Update the history of adding tasks from the task list
+  const updateHistory = (amount) => {
+    setHistory((prev) => {
+       return [amount, ...prev];
+    });
   }
 
   return (
