@@ -45,14 +45,21 @@ footer {
 
 #content ul li {
   background-color: #ecf9ff;
-  line-height: 40px;
+  line-height: 60px;
   padding-left:20px;
-}
-
-#content ul li:hover {
-  background-color: red;
+  position: relative;
+  cursor: pointer;
 }
 
 #content ul li:nth-child(even) {
   background-color: white;
+}
+
+#content ul li:hover, #content ul li:nth-child(even):hover {
+  background-color: #c7eeff;
+}
+
+.taskList .taskValue {
+  position: absolute;
+  right:10px;
 }
