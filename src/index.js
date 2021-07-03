@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MoneySaver from './MoneySaver';
+import MoneySaver from './moneySaver';
 import reportWebVitals from './reportWebVitals';
 import './main.css';
 

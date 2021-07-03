@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 
 export default function Footer(props) {
   return (
-    <footer>Hello</footer>
+    <footer></footer>
   );
 }
